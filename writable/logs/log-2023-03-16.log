@@ -1,0 +1,521 @@
+CRITICAL - 2023-03-16 11:08:13 --> Class "App\Models\ConfigModel" not found
+in APPPATH\Controllers\Frontend\HomeController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:10:56 --> Class "App\Models\AppTypeModel" not found
+in APPPATH\Controllers\Frontend\HomeController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:10:57 --> Class "App\Models\AppTypeModel" not found
+in APPPATH\Controllers\Frontend\HomeController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:11:12 --> Class "App\Models\AppTypeModel" not found
+in APPPATH\Controllers\Frontend\HomeController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:11:14 --> Class "App\Models\AppTypeModel" not found
+in APPPATH\Controllers\Frontend\HomeController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:11:59 --> Class "App\Models\AppTypeModel" not found
+in APPPATH\Controllers\Frontend\HomeController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:12:01 --> Class "App\Models\AppTypeModel" not found
+in APPPATH\Controllers\Frontend\HomeController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:12:38 --> Undefined variable $config
+in APPPATH\Views\frontend\components\styles.php on line 4.
+ 1 APPPATH\Views\frontend\components\styles.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $config', 'APPPATH\\Views\\frontend\\components\\styles.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\frontend\\components\\styles.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('frontend/components/styles', null, true)
+ 5 APPPATH\Views\frontend\home\index.php(5): CodeIgniter\View\View->include('frontend/components/styles')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\frontend\\home\\index.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('frontend/home/index', [], true)
+ 9 APPPATH\Controllers\Frontend\HomeController.php(19): view('frontend/home/index', [...])
+10 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->index()
+11 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:34:31 --> Undefined variable $product_categories
+in APPPATH\Views\frontend\home\index.php on line 33.
+ 1 APPPATH\Views\frontend\home\index.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product_categories', 'APPPATH\\Views\\frontend\\home\\index.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\frontend\\home\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('frontend/home/index', [], true)
+ 5 APPPATH\Controllers\Frontend\HomeController.php(19): view('frontend/home/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:35:08 --> Attempt to read property "image" on string
+in APPPATH\Views\frontend\home\index.php on line 34.
+ 1 APPPATH\Views\frontend\home\index.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "image" on string', 'APPPATH\\Views\\frontend\\home\\index.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\frontend\\home\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('frontend/home/index', [], true)
+ 5 APPPATH\Controllers\Frontend\HomeController.php(19): view('frontend/home/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:36:02 --> Attempt to read property "image" on string
+in APPPATH\Views\frontend\home\index.php on line 34.
+ 1 APPPATH\Views\frontend\home\index.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "image" on string', 'APPPATH\\Views\\frontend\\home\\index.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\frontend\\home\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('frontend/home/index', [], true)
+ 5 APPPATH\Controllers\Frontend\HomeController.php(19): view('frontend/home/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:46:15 --> Undefined property: stdClass::$link
+in APPPATH\Views\frontend\home\index.php on line 59.
+ 1 APPPATH\Views\frontend\home\index.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$link', 'APPPATH\\Views\\frontend\\home\\index.php', 59)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\frontend\\home\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('frontend/home/index', [], true)
+ 5 APPPATH\Controllers\Frontend\HomeController.php(19): view('frontend/home/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:57:18 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('_manifest.json')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:57:44 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('_manifest.json')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:57:46 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('index.html')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:57:47 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('index.html')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:57:47 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('index.html')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:57:59 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('_manifest.json')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:58:03 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('_manifest.json')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:58:05 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('index.html')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:58:52 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('index.html')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:58:53 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('index.html')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:58:53 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('index.html')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:59:00 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('_manifest.json')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:59:02 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('_manifest.json')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:59:03 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('index.html')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:59:03 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('index.html')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:59:04 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('index.html')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:59:04 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('index.html')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:59:25 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('index.html')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:59:28 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('_manifest.json')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:59:37 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('_manifest.json')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 11:59:40 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('_manifest.json')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 12:00:05 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('_manifest.json')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 12:00:17 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('extranet')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 12:00:41 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('_manifest.json')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 12:00:45 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('_manifest.json')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 12:02:22 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('extranet')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 12:02:33 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('ext-login')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 12:05:24 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('ext-login')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 12:06:54 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('ext-login')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 12:07:18 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('ext-login')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 12:07:32 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('ext-login')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 12:07:45 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('_manifest.json')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 12:07:54 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('_manifest.json')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 12:07:57 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('extranet')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 12:09:06 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('_manifest.json')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 12:09:23 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('styles', 'highlights', 'highlight_red.css')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 12:09:23 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('_manifest.json')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 12:09:29 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('extranet')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 12:10:38 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('styles', 'highlights', 'highlight_red.css')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 12:10:38 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Frontend\HomeController.php on line 30.
+ 1 APPPATH\Controllers\Frontend\HomeController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Frontend\\HomeController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->show('_manifest.json')
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 12:10:44 --> Undefined variable $config
+in APPPATH\Views\extranet\components\styles.php on line 6.
+ 1 APPPATH\Views\extranet\components\styles.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $config', 'APPPATH\\Views\\extranet\\components\\styles.php', 6)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\components\\styles.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('extranet/components/styles', null, true)
+ 5 APPPATH\Views\extranet\auth\login.php(8): CodeIgniter\View\View->include('extranet/components/styles')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\auth\\login.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/auth/login', [], true)
+ 9 APPPATH\Controllers\Extranet\AuthController.php(11): view('extranet/auth/login')
+10 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\AuthController->login()
+11 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\AuthController))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 12:13:31 --> Undefined variable $config
+in APPPATH\Views\extranet\home\index.php on line 8.
+ 1 APPPATH\Views\extranet\home\index.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $config', 'APPPATH\\Views\\extranet\\home\\index.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\home\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/home/index', [], true)
+ 5 APPPATH\Controllers\Extranet\HomeExtranetController.php(9): view('extranet/home/index')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\HomeExtranetController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\HomeExtranetController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 12:14:09 --> Undefined variable $config
+in APPPATH\Views\extranet\home\index.php on line 11.
+ 1 APPPATH\Views\extranet\home\index.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $config', 'APPPATH\\Views\\extranet\\home\\index.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\home\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/home/index', [], true)
+ 5 APPPATH\Controllers\Extranet\HomeExtranetController.php(9): view('extranet/home/index')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\HomeExtranetController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\HomeExtranetController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 12:14:27 --> Undefined variable $config
+in APPPATH\Views\extranet\components\header.php on line 3.
+ 1 APPPATH\Views\extranet\components\header.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $config', 'APPPATH\\Views\\extranet\\components\\header.php', 3)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\components\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('extranet/components/header', null, true)
+ 5 APPPATH\Views\extranet\home\index.php(17): CodeIgniter\View\View->include('extranet/components/header')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\home\\index.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/home/index', [], true)
+ 9 APPPATH\Controllers\Extranet\HomeExtranetController.php(9): view('extranet/home/index')
+10 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\HomeExtranetController->index()
+11 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\HomeExtranetController))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 12:15:16 --> Undefined variable $config
+in APPPATH\Views\extranet\components\header.php on line 15.
+ 1 APPPATH\Views\extranet\components\header.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $config', 'APPPATH\\Views\\extranet\\components\\header.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\components\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('extranet/components/header', null, true)
+ 5 APPPATH\Views\extranet\home\index.php(17): CodeIgniter\View\View->include('extranet/components/header')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\home\\index.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/home/index', [], true)
+ 9 APPPATH\Controllers\Extranet\HomeExtranetController.php(9): view('extranet/home/index')
+10 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\HomeExtranetController->index()
+11 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\HomeExtranetController))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-16 12:17:37 --> Undefined variable $config
+in APPPATH\Views\extranet\components\footer.php on line 8.
+ 1 APPPATH\Views\extranet\components\footer.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $config', 'APPPATH\\Views\\extranet\\components\\footer.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\components\\footer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('extranet/components/footer', null, true)
+ 5 APPPATH\Views\extranet\home\index.php(54): CodeIgniter\View\View->include('extranet/components/footer')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\home\\index.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/home/index', [], true)
+ 9 APPPATH\Controllers\Extranet\HomeExtranetController.php(9): view('extranet/home/index')
+10 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\HomeExtranetController->index()
+11 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\HomeExtranetController))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

@@ -1,0 +1,309 @@
+ERROR - 2023-03-06 00:17:52 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'nadi-app' in C:\xampp-8-2-0\htdocs\nadi-app\system\Database\MySQLi\Connection.php:170
+Stack trace:
+#0 C:\xampp-8-2-0\htdocs\nadi-app\system\Database\MySQLi\Connection.php(170): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'nadi-app', 3306, '', 0)
+#1 C:\xampp-8-2-0\htdocs\nadi-app\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp-8-2-0\htdocs\nadi-app\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp-8-2-0\htdocs\nadi-app\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp-8-2-0\htdocs\nadi-app\system\Model.php(805): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp-8-2-0\htdocs\nadi-app\app\Controllers\Frontend\HomeController.php(17): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp-8-2-0\htdocs\nadi-app\system\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->index()
+#7 C:\xampp-8-2-0\htdocs\nadi-app\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+#8 C:\xampp-8-2-0\htdocs\nadi-app\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp-8-2-0\htdocs\nadi-app\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp-8-2-0\htdocs\nadi-app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp-8-2-0\\...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'nadi-app' in C:\xampp-8-2-0\htdocs\nadi-app\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp-8-2-0\htdocs\nadi-app\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp-8-2-0\htdocs\nadi-app\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp-8-2-0\htdocs\nadi-app\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp-8-2-0\htdocs\nadi-app\system\Model.php(805): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp-8-2-0\htdocs\nadi-app\app\Controllers\Frontend\HomeController.php(17): CodeIgniter\Model->__call('get', Array)
+#5 C:\xampp-8-2-0\htdocs\nadi-app\system\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->index()
+#6 C:\xampp-8-2-0\htdocs\nadi-app\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+#7 C:\xampp-8-2-0\htdocs\nadi-app\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp-8-2-0\htdocs\nadi-app\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp-8-2-0\htdocs\nadi-app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp-8-2-0\\...')
+#10 {main}
+CRITICAL - 2023-03-06 00:17:52 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'nadi-app'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `config`', [], false)
+ 3 SYSTEMPATH\Model.php(805): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Frontend\HomeController.php(17): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-06 00:21:24 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'nadi-app' in C:\xampp-8-2-0\htdocs\nadi-app\system\Database\MySQLi\Connection.php:170
+Stack trace:
+#0 C:\xampp-8-2-0\htdocs\nadi-app\system\Database\MySQLi\Connection.php(170): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'nadi-app', 3306, '', 0)
+#1 C:\xampp-8-2-0\htdocs\nadi-app\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp-8-2-0\htdocs\nadi-app\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp-8-2-0\htdocs\nadi-app\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp-8-2-0\htdocs\nadi-app\system\Model.php(805): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp-8-2-0\htdocs\nadi-app\app\Controllers\Frontend\HomeController.php(17): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp-8-2-0\htdocs\nadi-app\system\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->index()
+#7 C:\xampp-8-2-0\htdocs\nadi-app\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+#8 C:\xampp-8-2-0\htdocs\nadi-app\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp-8-2-0\htdocs\nadi-app\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp-8-2-0\htdocs\nadi-app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp-8-2-0\\...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'nadi-app' in C:\xampp-8-2-0\htdocs\nadi-app\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp-8-2-0\htdocs\nadi-app\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp-8-2-0\htdocs\nadi-app\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp-8-2-0\htdocs\nadi-app\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp-8-2-0\htdocs\nadi-app\system\Model.php(805): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp-8-2-0\htdocs\nadi-app\app\Controllers\Frontend\HomeController.php(17): CodeIgniter\Model->__call('get', Array)
+#5 C:\xampp-8-2-0\htdocs\nadi-app\system\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->index()
+#6 C:\xampp-8-2-0\htdocs\nadi-app\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+#7 C:\xampp-8-2-0\htdocs\nadi-app\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp-8-2-0\htdocs\nadi-app\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp-8-2-0\htdocs\nadi-app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp-8-2-0\\...')
+#10 {main}
+CRITICAL - 2023-03-06 00:21:24 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'nadi-app'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `config`', [], false)
+ 3 SYSTEMPATH\Model.php(805): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Frontend\HomeController.php(17): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-06 00:24:38 --> Invalid file: extranet/feature/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('extranet/feature/index.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/feature/index', [], true)
+ 3 APPPATH\Controllers\Extranet\FeatureController.php(19): view('extranet/feature/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\FeatureController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\FeatureController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-06 00:25:56 --> Undefined property: stdClass::$code
+in APPPATH\Views\extranet\feature\index.php on line 53.
+ 1 APPPATH\Views\extranet\feature\index.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$code', 'APPPATH\\Views\\extranet\\feature\\index.php', 53)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\feature\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/feature/index', [], true)
+ 5 APPPATH\Controllers\Extranet\FeatureController.php(19): view('extranet/feature/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\FeatureController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\FeatureController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-06 01:38:20 --> Undefined variable $app_type
+in APPPATH\Views\extranet\service\show.php on line 38.
+ 1 APPPATH\Views\extranet\service\show.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $app_type', 'APPPATH\\Views\\extranet\\service\\show.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\service\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/service/show', [], true)
+ 5 APPPATH\Controllers\Extranet\ServiceController.php(61): view('extranet/service/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\ServiceController->show('4cbf6043-9290-11ed-95d7-b0227a7395f6')
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\ServiceController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-06 01:39:41 --> Undefined variable $app_type
+in APPPATH\Views\extranet\service\show.php on line 38.
+ 1 APPPATH\Views\extranet\service\show.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $app_type', 'APPPATH\\Views\\extranet\\service\\show.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\service\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/service/show', [], true)
+ 5 APPPATH\Controllers\Extranet\ServiceController.php(61): view('extranet/service/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\ServiceController->show('4cbf6043-9290-11ed-95d7-b0227a7395f6')
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\ServiceController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-06 01:39:56 --> Undefined property: stdClass::$Description
+in APPPATH\Views\extranet\service\show.php on line 42.
+ 1 APPPATH\Views\extranet\service\show.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Description', 'APPPATH\\Views\\extranet\\service\\show.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\service\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/service/show', [], true)
+ 5 APPPATH\Controllers\Extranet\ServiceController.php(61): view('extranet/service/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\ServiceController->show('4cbf6043-9290-11ed-95d7-b0227a7395f6')
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\ServiceController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-06 07:30:19 --> Undefined variable $app_type
+in APPPATH\Views\extranet\app\show.php on line 38.
+ 1 APPPATH\Views\extranet\app\show.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $app_type', 'APPPATH\\Views\\extranet\\app\\show.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\app\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/app/show', [], true)
+ 5 APPPATH\Controllers\Extranet\AppController.php(66): view('extranet/app/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\AppController->show('05de9780-bc23-11ed-afc9-b0227a7395f6')
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\AppController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-06 07:55:48 --> Undefined variable $app_type
+in APPPATH\Views\extranet\app\edit.php on line 35.
+ 1 APPPATH\Views\extranet\app\edit.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $app_type', 'APPPATH\\Views\\extranet\\app\\edit.php', 35)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\app\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/app/edit', [], true)
+ 5 APPPATH\Controllers\Extranet\AppController.php(83): view('extranet/app/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\AppController->edit('90f8c96b-bc26-11ed-afc9-b0227a7395f6')
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\AppController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-06 07:59:47 --> Undefined variable $app_type
+in APPPATH\Views\extranet\app\edit.php on line 40.
+ 1 APPPATH\Views\extranet\app\edit.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $app_type', 'APPPATH\\Views\\extranet\\app\\edit.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\app\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/app/edit', [], true)
+ 5 APPPATH\Controllers\Extranet\AppController.php(83): view('extranet/app/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\AppController->edit('90f8c96b-bc26-11ed-afc9-b0227a7395f6')
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\AppController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-06 08:00:42 --> Undefined variable $app_type
+in APPPATH\Views\extranet\app\edit.php on line 40.
+ 1 APPPATH\Views\extranet\app\edit.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $app_type', 'APPPATH\\Views\\extranet\\app\\edit.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\app\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/app/edit', [], true)
+ 5 APPPATH\Controllers\Extranet\AppController.php(83): view('extranet/app/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\AppController->edit('90f8c96b-bc26-11ed-afc9-b0227a7395f6')
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\AppController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-06 08:16:53 --> Invalid file: extranet/client/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('extranet/client/index.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/client/index', [], true)
+ 3 APPPATH\Controllers\Extranet\ClientController.php(19): view('extranet/client/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\ClientController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\ClientController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-06 08:17:40 --> Undefined variable $features
+in APPPATH\Views\extranet\client\index.php on line 49.
+ 1 APPPATH\Views\extranet\client\index.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $features', 'APPPATH\\Views\\extranet\\client\\index.php', 49)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\client\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/client/index', [], true)
+ 5 APPPATH\Controllers\Extranet\ClientController.php(19): view('extranet/client/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\ClientController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\ClientController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-06 08:30:16 --> Undefined variable $feature
+in APPPATH\Views\extranet\client\show.php on line 38.
+ 1 APPPATH\Views\extranet\client\show.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $feature', 'APPPATH\\Views\\extranet\\client\\show.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\client\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/client/show', [], true)
+ 5 APPPATH\Controllers\Extranet\ClientController.php(42): view('extranet/client/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\ClientController->show('d398e6be-bc2a-11ed-afc9-b0227a7395f6')
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\ClientController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-06 08:32:07 --> Undefined variable $feature
+in APPPATH\Views\extranet\client\show.php on line 38.
+ 1 APPPATH\Views\extranet\client\show.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $feature', 'APPPATH\\Views\\extranet\\client\\show.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\client\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/client/show', [], true)
+ 5 APPPATH\Controllers\Extranet\ClientController.php(47): view('extranet/client/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\ClientController->show('d398e6be-bc2a-11ed-afc9-b0227a7395f6')
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\ClientController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-06 08:33:44 --> Undefined variable $feature
+in APPPATH\Views\extranet\client\show.php on line 38.
+ 1 APPPATH\Views\extranet\client\show.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $feature', 'APPPATH\\Views\\extranet\\client\\show.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\client\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/client/show', [], true)
+ 5 APPPATH\Controllers\Extranet\ClientController.php(47): view('extranet/client/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\ClientController->show('d398e6be-bc2a-11ed-afc9-b0227a7395f6')
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\ClientController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-06 08:35:45 --> Undefined variable $client
+in APPPATH\Views\extranet\client\show.php on line 38.
+ 1 APPPATH\Views\extranet\client\show.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $client', 'APPPATH\\Views\\extranet\\client\\show.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\client\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/client/show', [], true)
+ 5 APPPATH\Controllers\Extranet\ClientController.php(47): view('extranet/client/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\ClientController->show('d398e6be-bc2a-11ed-afc9-b0227a7395f6')
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\ClientController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-06 08:44:54 --> Undefined property: stdClass::$title
+in APPPATH\Views\extranet\client\show.php on line 38.
+ 1 APPPATH\Views\extranet\client\show.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$title', 'APPPATH\\Views\\extranet\\client\\show.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\client\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/client/show', [], true)
+ 5 APPPATH\Controllers\Extranet\ClientController.php(44): view('extranet/client/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\ClientController->show('d398e6be-bc2a-11ed-afc9-b0227a7395f6')
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\ClientController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-06 08:45:28 --> Undefined property: stdClass::$title
+in APPPATH\Views\extranet\client\show.php on line 42.
+ 1 APPPATH\Views\extranet\client\show.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$title', 'APPPATH\\Views\\extranet\\client\\show.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\client\\show.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/client/show', [], true)
+ 5 APPPATH\Controllers\Extranet\ClientController.php(44): view('extranet/client/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\ClientController->show('d398e6be-bc2a-11ed-afc9-b0227a7395f6')
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\ClientController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-06 08:52:57 --> Undefined variable $app
+in APPPATH\Views\extranet\client\index.php on line 107.
+ 1 APPPATH\Views\extranet\client\index.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $app', 'APPPATH\\Views\\extranet\\client\\index.php', 107)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\client\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/client/index', [], true)
+ 5 APPPATH\Controllers\Extranet\ClientController.php(28): view('extranet/client/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\ClientController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\ClientController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-06 09:59:45 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAll()
+in APPPATH\Controllers\Extranet\HomeExtranetController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\HomeExtranetController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\HomeExtranetController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-06 10:30:41 --> Call to undefined method App\Models\AppModel::wherer
+in SYSTEMPATH\Model.php on line 807.
+ 1 APPPATH\Controllers\Frontend\GetStartedController.php(69): CodeIgniter\Model->__call('wherer', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\GetStartedController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\GetStartedController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

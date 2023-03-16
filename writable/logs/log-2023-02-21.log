@@ -1,0 +1,48 @@
+CRITICAL - 2023-02-21 00:18:13 --> Invalid file: frontend/ourapps/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('frontend/ourapps/index.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('frontend/ourapps/index', [], true)
+ 3 APPPATH\Controllers\Frontend\Ourappscontroller.php(9): view('frontend/ourapps/index')
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\Ourappscontroller->index()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\Ourappscontroller))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-21 00:37:08 --> Undefined variable $config
+in APPPATH\Views\frontend\ourapps\index.php on line 11.
+ 1 APPPATH\Views\frontend\ourapps\index.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $config', 'APPPATH\\Views\\frontend\\ourapps\\index.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\frontend\\ourapps\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('frontend/ourapps/index', [], true)
+ 5 APPPATH\Controllers\Frontend\Ourappscontroller.php(9): view('frontend/ourapps/index')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\Ourappscontroller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\Ourappscontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-21 00:40:57 --> Undefined variable $social_medias
+in APPPATH\Views\frontend\components\footer.php on line 27.
+ 1 APPPATH\Views\frontend\components\footer.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $social_medias', 'APPPATH\\Views\\frontend\\components\\footer.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\frontend\\components\\footer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('frontend/components/footer', null, true)
+ 5 APPPATH\Views\frontend\ourapps\index.php(211): CodeIgniter\View\View->include('frontend/components/footer')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\frontend\\ourapps\\index.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('frontend/ourapps/index', [], true)
+ 9 APPPATH\Controllers\Frontend\Ourappscontroller.php(13): view('frontend/ourapps/index', [...])
+10 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\Ourappscontroller->index()
+11 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\Ourappscontroller))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-21 02:13:59 --> Invalid file: frontend/ourapps/show.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('frontend/ourapps/show.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('frontend/ourapps/show', [], true)
+ 3 APPPATH\Controllers\Frontend\Ourappscontroller.php(33): view('frontend/ourapps/show', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\Ourappscontroller->show('clinic')
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\Ourappscontroller))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

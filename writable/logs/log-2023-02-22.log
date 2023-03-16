@@ -1,0 +1,41 @@
+ERROR - 2023-02-22 01:22:03 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'nadi-app' in C:\xampp-8-1-12\htdocs\nadi-app\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp-8-1-12\htdocs\nadi-app\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'nadi-app', 3306, '', 0)
+#1 C:\xampp-8-1-12\htdocs\nadi-app\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp-8-1-12\htdocs\nadi-app\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp-8-1-12\htdocs\nadi-app\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp-8-1-12\htdocs\nadi-app\system\Model.php(805): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp-8-1-12\htdocs\nadi-app\app\Controllers\Frontend\Homecontroller.php(23): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp-8-1-12\htdocs\nadi-app\system\CodeIgniter.php(925): App\Controllers\Frontend\Homecontroller->index()
+#7 C:\xampp-8-1-12\htdocs\nadi-app\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\Homecontroller))
+#8 C:\xampp-8-1-12\htdocs\nadi-app\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp-8-1-12\htdocs\nadi-app\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp-8-1-12\htdocs\nadi-app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp-8-1-12...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'nadi-app' in C:\xampp-8-1-12\htdocs\nadi-app\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp-8-1-12\htdocs\nadi-app\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp-8-1-12\htdocs\nadi-app\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp-8-1-12\htdocs\nadi-app\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp-8-1-12\htdocs\nadi-app\system\Model.php(805): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp-8-1-12\htdocs\nadi-app\app\Controllers\Frontend\Homecontroller.php(23): CodeIgniter\Model->__call('get', Array)
+#5 C:\xampp-8-1-12\htdocs\nadi-app\system\CodeIgniter.php(925): App\Controllers\Frontend\Homecontroller->index()
+#6 C:\xampp-8-1-12\htdocs\nadi-app\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\Homecontroller))
+#7 C:\xampp-8-1-12\htdocs\nadi-app\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp-8-1-12\htdocs\nadi-app\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp-8-1-12\htdocs\nadi-app\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp-8-1-12...')
+#10 {main}
+CRITICAL - 2023-02-22 01:22:03 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'nadi-app'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `configuration`', [], false)
+ 3 SYSTEMPATH\Model.php(805): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Frontend\Homecontroller.php(23): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Frontend\Homecontroller->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\Homecontroller))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

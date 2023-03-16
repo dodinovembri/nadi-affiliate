@@ -1,0 +1,28 @@
+CRITICAL - 2023-03-07 02:47:31 --> Undefined property: stdClass::$user_image_default
+in APPPATH\Views\extranet\components\header.php on line 18.
+ 1 APPPATH\Views\extranet\components\header.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$user_image_default', 'APPPATH\\Views\\extranet\\components\\header.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\components\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('extranet/components/header', null, true)
+ 5 APPPATH\Views\extranet\home\index.php(17): CodeIgniter\View\View->include('extranet/components/header')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\home\\index.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/home/index', [], true)
+ 9 APPPATH\Controllers\Extranet\HomeExtranetController.php(31): view('extranet/home/index', [...])
+10 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\HomeExtranetController->index()
+11 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\HomeExtranetController))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-07 03:49:47 --> Undefined variable $task
+in APPPATH\Views\extranet\task\index.php on line 62.
+ 1 APPPATH\Views\extranet\task\index.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $task', 'APPPATH\\Views\\extranet\\task\\index.php', 62)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\task\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/task/index', [], true)
+ 5 APPPATH\Controllers\Extranet\TaskController.php(19): view('extranet/task/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\TaskController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\TaskController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

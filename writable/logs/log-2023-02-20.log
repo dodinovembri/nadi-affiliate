@@ -1,0 +1,166 @@
+CRITICAL - 2023-02-20 01:33:11 --> Class "App\Models\UserModel" not found
+in APPPATH\Controllers\Extranet\Authcontroller.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\Authcontroller->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\Authcontroller))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-20 01:34:52 --> Class "App\Models\OrderModel" not found
+in APPPATH\Controllers\Extranet\Extranethomecontroller.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\Extranethomecontroller->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\Extranethomecontroller))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-20 01:36:09 --> Undefined variable $count_order
+in APPPATH\Views\extranet\home\index.php on line 35.
+ 1 APPPATH\Views\extranet\home\index.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $count_order', 'APPPATH\\Views\\extranet\\home\\index.php', 35)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\home\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/home/index', [], true)
+ 5 APPPATH\Controllers\Extranet\Extranethomecontroller.php(9): view('extranet/home/index')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\Extranethomecontroller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\Extranethomecontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-20 01:37:33 --> Class "App\Models\BannerModel" not found
+in APPPATH\Controllers\Extranet\Bannercontroller.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\Bannercontroller->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\Bannercontroller))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-20 01:39:33 --> Class "App\Models\OrderModel" not found
+in APPPATH\Controllers\Extranet\Ordercontroller.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\Ordercontroller->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\Ordercontroller))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-20 01:42:45 --> Class "App\Models\FaqModel" not found
+in APPPATH\Controllers\Extranet\ProspectiveCustomerController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\ProspectiveCustomerController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\ProspectiveCustomerController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-20 01:43:44 --> Class "App\Models\ProspectiveCustomerModel" not found
+in APPPATH\Controllers\Extranet\ProspectiveCustomerController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\ProspectiveCustomerController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\ProspectiveCustomerController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-20 01:47:21 --> Class "App\Models\ProspectiveCustomerModel" not found
+in APPPATH\Controllers\Extranet\ProspectiveCustomerController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\ProspectiveCustomerController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\ProspectiveCustomerController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-20 01:47:22 --> Class "App\Models\ProspectiveCustomerModel" not found
+in APPPATH\Controllers\Extranet\ProspectiveCustomerController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\ProspectiveCustomerController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\ProspectiveCustomerController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-20 01:47:23 --> Class "App\Models\ProspectiveCustomerModel" not found
+in APPPATH\Controllers\Extranet\ProspectiveCustomerController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\ProspectiveCustomerController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\ProspectiveCustomerController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-20 01:50:32 --> Invalid file: extranet/prospective_customer/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('extranet/prospective_customer/index.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/prospective_customer/index', [], true)
+ 3 APPPATH\Controllers\Extranet\ProspectiveCustomerController.php(14): view('extranet/prospective_customer/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\ProspectiveCustomerController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\ProspectiveCustomerController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-20 01:50:59 --> Undefined variable $faqs
+in APPPATH\Views\extranet\prospective_customer\index.php on line 48.
+ 1 APPPATH\Views\extranet\prospective_customer\index.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $faqs', 'APPPATH\\Views\\extranet\\prospective_customer\\index.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\prospective_customer\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/prospective_customer/index', [], true)
+ 5 APPPATH\Controllers\Extranet\ProspectiveCustomerController.php(14): view('extranet/prospective_customer/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\ProspectiveCustomerController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\ProspectiveCustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-20 01:51:19 --> Undefined variable $prosepective_customers
+in APPPATH\Views\extranet\prospective_customer\index.php on line 48.
+ 1 APPPATH\Views\extranet\prospective_customer\index.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $prosepective_customers', 'APPPATH\\Views\\extranet\\prospective_customer\\index.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\prospective_customer\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/prospective_customer/index', [], true)
+ 5 APPPATH\Controllers\Extranet\ProspectiveCustomerController.php(14): view('extranet/prospective_customer/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\ProspectiveCustomerController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\ProspectiveCustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-20 01:54:49 --> Undefined constant "customers"
+in APPPATH\Views\extranet\prospective_customer\index.php on line 48.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/prospective_customer/index', [], true)
+ 4 APPPATH\Controllers\Extranet\ProspectiveCustomerController.php(14): view('extranet/prospective_customer/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\ProspectiveCustomerController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\ProspectiveCustomerController))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-20 02:14:28 --> Invalid file: extranet/customer_type/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('extranet/customer_type/index.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/customer_type/index', [], true)
+ 3 APPPATH\Controllers\Extranet\CustomerTypeController.php(14): view('extranet/customer_type/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\CustomerTypeController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\CustomerTypeController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-20 02:15:54 --> Undefined variable $product_categories
+in APPPATH\Views\extranet\customer_type\index.php on line 50.
+ 1 APPPATH\Views\extranet\customer_type\index.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product_categories', 'APPPATH\\Views\\extranet\\customer_type\\index.php', 50)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\customer_type\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/customer_type/index', [], true)
+ 5 APPPATH\Controllers\Extranet\CustomerTypeController.php(14): view('extranet/customer_type/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\CustomerTypeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\CustomerTypeController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-20 02:16:08 --> Undefined property: stdClass::$code
+in APPPATH\Views\extranet\customer_type\index.php on line 54.
+ 1 APPPATH\Views\extranet\customer_type\index.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$code', 'APPPATH\\Views\\extranet\\customer_type\\index.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\customer_type\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/customer_type/index', [], true)
+ 5 APPPATH\Controllers\Extranet\CustomerTypeController.php(14): view('extranet/customer_type/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\CustomerTypeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\CustomerTypeController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-20 02:17:26 --> Undefined property: stdClass::$code
+in APPPATH\Views\extranet\customer_type\index.php on line 54.
+ 1 APPPATH\Views\extranet\customer_type\index.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$code', 'APPPATH\\Views\\extranet\\customer_type\\index.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\extranet\\customer_type\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('extranet/customer_type/index', [], true)
+ 5 APPPATH\Controllers\Extranet\CustomerTypeController.php(14): view('extranet/customer_type/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Extranet\CustomerTypeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extranet\CustomerTypeController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
