@@ -5,10 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="keywords" content="<?= $config->keyword ?>" />
-    <meta name="description" content="<?= $config->description ?>" />
+    <meta name="keywords" content="Inspirasi Stuff" />
+    <meta name="description" content="Inspirasi Stuff" />
 
-    <title>App | <?= $config->name ?></title>
+    <title>Products | Inspirasi Stuff</title>
     <?= $this->include('extranet/components/styles') ?>
 </head>
 
@@ -21,13 +21,10 @@
         <div class="main-content-wrap sidenav-open d-flex flex-column">
             <div class="main-content">
                 <div class="breadcrumb">
-                    <h1>Apps</h1>
-                    <ul>
-                        <li><a href="#">Apps</a></li>
-                    </ul>
+                    <h1>Products</h1>
                 </div>
                 <div class="separator-breadcrumb border-top"></div>
-                <a href="<?= base_url('extranet/app/create') ?>"><button class="btn btn-primary ripple" type="button">Create New</button><br><br></a>
+                <a href="<?= base_url('extranet/product/create') ?>"><button class="btn btn-primary ripple" type="button">Create New</button><br><br></a>
                 <div class="row mb-4">
                     <div class="col-md-12 mb-4">
                         <?= $this->include('extranet/components/flashmessage') ?>
@@ -39,6 +36,7 @@
                                             <tr>
                                                 <th style="width:10px">No</th>
                                                 <th>Image</th>
+                                                <th>Code</th>
                                                 <th>Name</th>
                                                 <th>Url</th>
                                                 <th style="width:25px">Status</th>
@@ -47,13 +45,14 @@
                                         </thead>
                                         <tbody>
                                             <?php $no = 0;
-                                            foreach ($apps as $key => $value) {
+                                            foreach ($products as $key => $value) {
                                                 $no++; ?>
                                                 <tr>
                                                     <td><?= $no ?></td>
                                                     <td>
-                                                        <img src="<?= base_url('assets/images/apps/' . $value->image) ?>" width="80" alt="">
+                                                        <img src="<?= base_url('assets/images/product/' . $value->image) ?>" width="80" alt="">
                                                     </td>
+                                                    <td><?= $value->code ?></td>
                                                     <td><?= $value->name ?></td>
                                                     <td><?= $value->url ?></td>
                                                     <td>
@@ -64,10 +63,7 @@
                                                         } ?>
                                                     </td>
                                                     <td>
-                                                        <a class="text-success mr-2" href="<?= base_url('extranet/app/show/' . $value->id) ?>">
-                                                            <i class="nav-icon i-Eye font-weight-bold"></i>
-                                                        </a>
-                                                        <a class="text-success mr-2" href="<?= base_url('extranet/app/edit/' . $value->id) ?>">
+                                                        <a class="text-success mr-2" href="<?= base_url('extranet/product/edit/' . $value->id) ?>">
                                                             <i class="nav-icon i-Pen-2 font-weight-bold"></i>
                                                         </a>
                                                         <a class="text-danger mr-2" href="#">
@@ -87,7 +83,7 @@
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                                                                <a href="<?= base_url('extranet/app/destroy/' . $value->id) ?>"><button class="btn btn-primary ml-2" type="button">Delete</button></a>
+                                                                <a href="<?= base_url('extranet/product/destroy/' . $value->id) ?>"><button class="btn btn-primary ml-2" type="button">Delete</button></a>
                                                             </div>
                                                         </div>
                                                     </div>

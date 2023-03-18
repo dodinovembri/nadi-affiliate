@@ -37,6 +37,7 @@ $routes->addPlaceholder('uuid', '[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}
 // Routes Frontend Website
 $routes->get('/', [\App\Controllers\Frontend\HomeController::class, 'index']);
 $routes->get('category/(:any)', [\App\Controllers\Frontend\HomeController::class, 'show']);
+$routes->post('search/fetch', [\App\Controllers\Frontend\HomeController::class, 'fetch']);
 
 // Routes Backend Website
 $routes->get('ext-login', [\App\Controllers\Extranet\AuthController::class, 'login']);
@@ -44,22 +45,12 @@ $routes->post('ext-auth', [\App\Controllers\Extranet\AuthController::class, 'aut
 $routes->get('ext-logout', [\App\Controllers\Extranet\AuthController::class, 'logout']);
 $routes->group('extranet', ['filter' => 'auth'], function($routes){
 	$routes->get('/', [\App\Controllers\Extranet\HomeExtranetController::class, 'index']);
-
-	$routes->group('product-category', function ($routes) {
-		$routes->get('/', [\App\Controllers\Extranet\ProductCategoryController::class, 'index']);
-		$routes->get('create', [\App\Controllers\Extranet\ProductCategoryController::class, 'create']);
-		$routes->post('store', [\App\Controllers\Extranet\ProductCategoryController::class, 'store']);
-		$routes->get('show/(:uuid)', [\App\Controllers\Extranet\ProductCategoryController::class, 'show']);
-		$routes->get('edit/(:uuid)', [\App\Controllers\Extranet\ProductCategoryController::class, 'edit']);
-		$routes->post('update/(:uuid)', [\App\Controllers\Extranet\ProductCategoryController::class, 'update']);
-		$routes->get('destroy/(:uuid)', [\App\Controllers\Extranet\ProductCategoryController::class, 'destroy']);
-    });	
+	$routes->post('store', [\App\Controllers\Extranet\HomeExtranetController::class, 'store']);
 
 	$routes->group('product', function ($routes) {
 		$routes->get('/', [\App\Controllers\Extranet\ProductController::class, 'index']);
 		$routes->get('create', [\App\Controllers\Extranet\ProductController::class, 'create']);
 		$routes->post('store', [\App\Controllers\Extranet\ProductController::class, 'store']);
-		$routes->get('show/(:uuid)', [\App\Controllers\Extranet\ProductController::class, 'show']);
 		$routes->get('edit/(:uuid)', [\App\Controllers\Extranet\ProductController::class, 'edit']);
 		$routes->post('update/(:uuid)', [\App\Controllers\Extranet\ProductController::class, 'update']);
 		$routes->get('destroy/(:uuid)', [\App\Controllers\Extranet\ProductController::class, 'destroy']);

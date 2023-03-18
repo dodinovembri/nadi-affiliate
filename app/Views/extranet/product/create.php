@@ -5,10 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="keywords" content="<?= $config->keyword ?>" />
-    <meta name="description" content="<?= $config->description ?>" />
+    <meta name="keywords" content="Inspirasi Stuff" />
+    <meta name="description" content="Inspirasi Stuff" />
 
-    <title>App | <?= $config->name ?></title>
+    <title>Products | Inspirasi Stuff</title>
     <?= $this->include('extranet/components/styles') ?>
 </head>
 
@@ -23,7 +23,7 @@
                 <div class="breadcrumb">
                     <h1>Create New</h1>
                     <ul>
-                        <li><a href="<?= base_url('extranet/app') ?>">Apps</a></li>
+                        <li><a href="<?= base_url('extranet/product') ?>">Products</a></li>
                         <li>Create New</li>
                     </ul>
                 </div>
@@ -32,16 +32,20 @@
                     <div class="col-md-12">
                         <div class="card mb-4">
                             <div class="card-body">
-                                <form action="<?= base_url('extranet/app/store') ?>" method="post" enctype="multipart/form-data">
+                                <form action="<?= base_url('extranet/product/store') ?>" method="post" enctype="multipart/form-data">
                                     <div class="row">
                                         <div class="col-md-6 form-group mb-3">
-                                            <label>App Type</label>
-                                            <select class="form-control" name="app_type_id" required>
-                                                <option value="">Select App Type</option>
-                                                <?php foreach ($app_types as $key => $value) { ?>
+                                            <label>Product Category</label>
+                                            <select class="form-control" name="product_category_id" required>
+                                                <option value="">Select Product Category</option>
+                                                <?php foreach ($product_categories as $key => $value) { ?>
                                                     <option value="<?= $value->id ?>"><?= $value->name ?></option>
                                                 <?php } ?>
                                             </select>
+                                        </div>
+                                        <div class="col-md-6 form-group mb-3">
+                                            <label>Code</label>
+                                            <input class="form-control" type="text" name="code" placeholder="Enter code" required />
                                         </div>
                                         <div class="col-md-6 form-group mb-3">
                                             <label>Name</label>
@@ -50,7 +54,6 @@
                                         <div class="col-md-6 form-group mb-3">
                                             <label>Image</label>
                                             <input class="form-control" type="file" name="image" required />
-                                            <sub>.jpg or .png file, size: <span style="color:red"><b>1080 width</b></span> pixels</sub>
                                         </div>
                                         <div class="col-md-6 form-group mb-3">
                                             <label>Url</label>
@@ -65,7 +68,7 @@
                                         </div>
                                         <div class="col-md-12" style="margin-top: 20px;">
                                             <button class="btn btn-primary">Submit</button>
-                                            <a href="<?= base_url('extranet/app') ?>"><button type="button" class="btn btn-warning">Cancel</button></a>
+                                            <a href="<?= base_url('extranet/product') ?>"><button type="button" class="btn btn-warning">Cancel</button></a>
                                         </div>
                                     </div>
                                 </form>

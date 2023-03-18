@@ -14,6 +14,9 @@
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/frontend/fonts/css/fontawesome-all.min.css') ?>">
     <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
     <link rel="apple-touch-icon" sizes="180x180" href="<?= base_url('assets/frontend/app/icons/icon-192x192.html') ?>">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 
 <body class="theme-light" data-highlight="highlight-red" data-gradient="body-default">
@@ -34,8 +37,8 @@
                         <div class="card-center">
                             <a href="<?= $product_category->code ?>">
                                 <button class="btn accordion-btn">
-                                    <h4 class="text-center color-white text-uppercase"><?= $product_category->name ?></h4>
-                                    <p class="text-center color-white opacity-70 mb-0 mt-n2"><?= $product_category->description ?>uff</p>
+                                    <h4 class="text-center color-white text-uppercase"><?= $product_category->code ?></h4>
+                                    <p class="text-center color-white opacity-70 mb-0 mt-n2"><?= $product_category->name ?>uff</p>
                                 </button>
                             </a>
                         </div>
@@ -46,25 +49,11 @@
             <div class="search-page">
                 <div class="search-box search-header bg-theme card-style me-3 ms-3">
                     <i class="fa fa-search"></i>
-                    <input type="text" class="border-0" placeholder="Cari nomor berapa?" data-search>
+                    <input type="text" id="code" onkeyup="search()" class="border-0" placeholder="Cari nomor berapa?">
                     <a href="#" class="disabled mt-0"><i class="fa fa-times color-red-dark"></i></a>
                 </div>
                 <div class="search-results card card-style shadow-l">
-                    <div class="content">
-                        <?php foreach ($products as $key => $value) { ?>
-                            <div class="search-result-list">
-                                <img class="shadow-l preload-img" src="<?= base_url('assets/images/product/' . $value->image) ?>" data-src="<?= base_url('assets/images/product/' . $value->image) ?>" alt="img">
-                                <h1><?= $value->code ?></h1>
-                                <p><?= $value->name ?></p>
-                                <a href="<?= $value->url ?>" target="_blank" class="bg-highlight">VIEW</a>
-                            </div>
-                        <?php } ?>
-                        <div class="search-no-results disabled">
-                            <h3 class="bold top-10">Nothing found...</h3>
-                            <span class="under-heading font-11 opacity-70 color-theme">There's nothing matching the
-                                description you're looking for, try a different keyword.</span>
-                        </div>
-                    </div>
+                    <div class="content" id="result"></div>
                 </div>
             </div>
             <div class="footer card card-style">
@@ -81,3 +70,45 @@
     <script type="text/javascript" src="<?= base_url('assets/frontend/scripts/bootstrap.min.js') ?>"></script>
     <script type="text/javascript" src="<?= base_url('assets/frontend/scripts/custom.js') ?>"></script>
 </body>
+
+<script>
+    function load_data(query) {
+        $.ajax({
+            url: "<?= base_url('search/fetch'); ?>",
+            method: "POST",
+            data: {
+                query: query
+            },
+            success: function(data) {
+                $('#result').html(data);
+            }
+        })
+    }
+
+    function search() {
+        let text = document.getElementById("code");
+        if (text != '') {
+            load_data(text.value);
+        } else {
+            load_data();
+        }
+    }
+
+    $(document).ready(function() {
+
+        load_data();
+
+        function load_data(query) {
+            $.ajax({
+                url: "<?= base_url('search/fetch'); ?>",
+                method: "POST",
+                data: {
+                    query: query
+                },
+                success: function(data) {
+                    $('#result').html(data);
+                }
+            })
+        }
+    });
+</script>

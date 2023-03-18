@@ -5,9 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<meta name="keywords" content="Inspirasi Stuff" />
-	<meta name="description" content="Inspirasi Stuff" />  
-      
+    <meta name="keywords" content="Inspirasi Stuff" />
+    <meta name="description" content="Inspirasi Stuff" />
+
     <title>Home | Inspirasi Stuff</title>
     <?= $this->include('extranet/components/styles') ?>
 </head>
@@ -27,25 +27,51 @@
                     </ul>
                 </div>
                 <div class="separator-breadcrumb border-top"></div>
+                <?= $this->include('extranet/components/flashmessage') ?>
                 <div class="row">
-                    <!-- ICON BG-->
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="card card-icon-bg card-icon-bg-primary o-hidden mb-4">
-                            <div class="card-body text-center"><i class="i-Checkout-Basket"></i>
-                                <div class="content">
-                                    <p class="text-muted mt-2 mb-0">Product Catgegory</p>
-                                    <p class="text-primary text-16 line-height-1 mb-2"></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="card card-icon-bg card-icon-bg-primary o-hidden mb-4">
-                            <div class="card-body text-center"><i class="i-Financial"></i>
-                                <div class="content">
-                                    <p class="text-muted mt-2 mb-0">Product</p>
-                                    <p class="text-primary text-16 line-height-1 mb-2"></p>
-                                </div>
+                    <div class="col-md-12">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <form action="<?= base_url('extranet/store') ?>" method="post" enctype="multipart/form-data">
+                                    <div class="row">
+                                        <div class="col-md-6 form-group mb-3">
+                                            <label>Product Category</label>
+                                            <select class="form-control" name="product_category_id" required>
+                                                <option value="">Select Product Category</option>
+                                                <?php foreach ($product_categories as $key => $value) { ?>
+                                                    <option value="<?= $value->id ?>"><?= $value->name ?></option>
+                                                <?php } ?>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6 form-group mb-3">
+                                            <label>Code</label>
+                                            <input class="form-control" type="text" name="code" placeholder="Enter code" required />
+                                        </div>
+                                        <div class="col-md-6 form-group mb-3">
+                                            <label>Name</label>
+                                            <input class="form-control" type="text" name="name" placeholder="Enter name" required />
+                                        </div>
+                                        <div class="col-md-6 form-group mb-3">
+                                            <label>Image</label>
+                                            <input class="form-control" type="file" name="image" required />
+                                        </div>
+                                        <div class="col-md-6 form-group mb-3">
+                                            <label>Url</label>
+                                            <input class="form-control" type="text" name="url" placeholder="Enter url" required />
+                                        </div>
+                                        <div class="col-md-6 form-group mb-3">
+                                            <label>Status</label>
+                                            <select class="form-control" name="status" required>
+                                                <option value="1">Active</option>
+                                                <option value="0">Inactive</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12" style="margin-top: 20px;">
+                                            <button class="btn btn-primary">Submit</button>
+                                            <a href="<?= base_url('extranet') ?>"><button type="button" class="btn btn-warning">Reset</button></a>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -54,6 +80,7 @@
             <?= $this->include('extranet/components/footer') ?>
         </div>
     </div>
-	<?= $this->include('extranet/components/scripts') ?>
+    <?= $this->include('extranet/components/scripts') ?>
 </body>
+
 </html>

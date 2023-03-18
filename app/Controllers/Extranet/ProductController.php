@@ -2,48 +2,41 @@
 
 namespace App\Controllers\Extranet;
 
-use App\Models\ConfigModel;
-use App\Models\AppModel;
-use App\Models\AppTypeModel;
+use App\Models\ProductModel;
+use App\Models\ProductCategoryModel;
 
-class AppController extends BaseController
+class ProductController extends BaseController
 {
     public function index()
     {
-        // config
-        $config = new ConfigModel();
-        $data['config'] = $config->get()->getFirstRow();
-        // app
-        $app = new AppModel();
-        $data['apps'] = $app->get()->getResult();
+        // product
+        $app = new ProductModel();
+        $data['products'] = $app->get()->getResult();
 
-        return view('extranet/app/index', $data);
+        return view('extranet/product/index', $data);
     }
 
     public function create()
     {
-        // config
-        $config = new ConfigModel();
-        $data['config'] = $config->get()->getFirstRow();
-        // app type
-        $app_type = new AppTypeModel();
-        $data['app_types'] = $app_type->get()->getResult();        
+        // product category
+        $product_category = new ProductCategoryModel();
+        $data['product_categories'] = $product_category->get()->getResult();        
 
-        return view('extranet/app/create', $data);
+        return view('extranet/product/create', $data);
     }
 
     public function store()
     {
-        $app = new AppModel();
+        $app = new ProductModel();
 
         $image = $this->request->getFile('image');
         $image_name = $image->getRandomName();
-        $image->move('assets/images/apps/', $image_name);
+        $image->move('assets/images/product/', $image_name);
 
         $app->insert([
             'created_at' => date('Y-m-d H:i:s'),
-            'creator_id' => session()->get('id'),
-            'app_type_id' => $this->request->getPost('app_type_id'),
+            'product_category_id' => $this->request->getPost('product_category_id'),
+            'code' => $this->request->getPost('code'),
             'name' => $this->request->getPost('name'),
             'image' => $image_name,
             'url' => $this->request->getPost('url'),
@@ -51,78 +44,57 @@ class AppController extends BaseController
         ]);
 
         session()->setFlashdata('success', 'Success create new data');
-        return redirect()->to(base_url('extranet/app'));
-    }
-
-    public function show($id)
-    {
-        // config
-        $config = new ConfigModel();
-        $data['config'] = $config->get()->getFirstRow();
-        // app
-        $app_model = new AppModel();
-        $app = $app_model->where('id', $id)->get()->getFirstRow();
-        $data['app'] = $app;
-        // app type
-        $app_type = new AppTypeModel();        
-        $data['app_type'] = $app_type->where('id', $app->app_type_id)->get()->getFirstRow();
-        $data['app_types'] = $app_type->get()->getResult();           
-
-        return view('extranet/app/show', $data);
+        return redirect()->to(base_url('extranet/product'));
     }
 
     public function edit($id)
     {
-        // config
-        $config = new ConfigModel();
-        $data['config'] = $config->get()->getFirstRow();
-        // app
-        $app_model = new AppModel();
-        $app = $app_model->where('id', $id)->get()->getFirstRow();
-        $data['app'] = $app;
-        // app type
-        $app_type = new AppTypeModel();        
-        $data['app_type'] = $app_type->where('id', $app->app_type_id)->get()->getFirstRow();
-        $data['app_types'] = $app_type->get()->getResult();  
+        // product
+        $product = new ProductModel();
+        $product = $product->where('id', $id)->get()->getFirstRow();
+        $data['product'] = $product;
+        // product category
+        $product_category = new ProductCategoryModel();        
+        $data['product_category'] = $product_category->where('id', $product->product_category_id)->get()->getFirstRow();
+        $data['product_categories'] = $product_category->get()->getResult();  
 
-        return view('extranet/app/edit', $data);
+        return view('extranet/product/edit', $data);
     }
 
     public function update($id)
     {
-        $app = new AppModel();
+        $app = new ProductModel();
 
-        $app_image = $this->request->getFile('image');
-        if ($app_image != '') {
-            $app_image_name = $app_image->getRandomName();
-            $app_image->move('assets/images/apps/', $app_image_name);
+        $product_image = $this->request->getFile('image');
+        if ($product_image != '') {
+            $product_image_name = $product_image->getRandomName();
+            $product_image->move('assets/images/product/', $product_image_name);
 
             $app->update($id, [
                 'modified_at' => date('Y-m-d H:i:s'),
-                'modifier_id' => session()->get('id'),
-                'image' => $app_image_name
+                'image' => $product_image_name
             ]);
         }
 
         $app->update($id, [
             'modified_at' => date('Y-m-d H:i:s'),
-            'modifier_id' => session()->get('id'),
-            'app_type_id' => $this->request->getPost('app_type_id'),
+            'product_category_id' => $this->request->getPost('product_category_id'),
+            'code' => $this->request->getPost('code'),
             'name' => $this->request->getPost('name'),
             'url' => $this->request->getPost('url'),
             'status' => $this->request->getPost('status')
         ]);
 
         session()->setFlashdata('success', 'Success update data');
-        return redirect()->to(base_url('extranet/app'));
+        return redirect()->to(base_url('extranet/product'));
     }
 
     public function destroy($id)
     {
-        $app = new AppModel();
+        $app = new ProductModel();
         $app->delete($id);
 
         session()->setFlashdata('success', 'Success delete data');
-        return redirect()->to(base_url('extranet/app'));
+        return redirect()->to(base_url('extranet/product'));
     }
 }

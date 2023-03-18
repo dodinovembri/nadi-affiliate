@@ -6,6 +6,6 @@ use CodeIgniter\Model;
 class ProductModel extends Model {
     protected $table = 'product';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['status', 'created_at', 'modified_at', 'creator_id', 'modifier_id', 'app_type_id', 'name', 'image', 'url'];
+    protected $allowedFields = ['status', 'created_at', 'modified_at', 'product_category_id', 'code', 'name', 'image', 'url'];
 }
 
