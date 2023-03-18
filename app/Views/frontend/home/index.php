@@ -15,7 +15,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 
-<body class="theme-light" data-highlight="highlight-red" data-gradient="body-default">
+<body class="theme-light" data-gradient="body-default">
     <div id="preloader">
         <div class="spinner-border color-highlight" role="status"></div>
     </div>
