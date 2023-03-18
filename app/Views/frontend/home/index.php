@@ -16,9 +16,6 @@
 </head>
 
 <body class="theme-light" data-gradient="body-default">
-    <div id="preloader">
-        <div class="spinner-border color-highlight" role="status"></div>
-    </div>
     <div id="page">
         <div class="page-content header-clear-small">
             <!-- <div class="card card-style pb-3"> -->
@@ -49,7 +46,6 @@
         </div>
     </div>
     <script type="text/javascript" src="<?= base_url('assets/frontend/scripts/bootstrap.min.js') ?>"></script>
-    <script type="text/javascript" src="<?= base_url('assets/frontend/scripts/custom.js?v3') ?>"></script>
 </body>
 
 <script>
