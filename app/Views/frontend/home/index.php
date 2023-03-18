@@ -25,14 +25,8 @@
         <div class="spinner-border color-highlight" role="status"></div>
     </div>
     <div id="page">
-        <div id="footer-bar" class="footer-bar-1">
-            <a href="<?= base_url('/') ?>"><i class="fa fa-home"></i><span>Home</span></a>
-            <a href="<?= base_url('/') ?>" class="active-nav"><i class="fa fa-search"></i><span>Search</span></a>
-        </div>
         <div class="page-content header-clear-small">
-            <div class="card card-style pb-3">
-                <div class="content">
-                </div>
+            <!-- <div class="card card-style pb-3"> -->
                 <div class="accordion mb-2">
                     <?php foreach ($product_categories as $key => $value) { ?>
                         <div data-card-height="90" class="card card-style mb-0 mt-2 rounded-s" style="background-image: url(<?= base_url('assets/images/product_category/' . $value->image) ?>);">
@@ -46,8 +40,8 @@
                         </div>
                     <?php } ?>
                 </div>
-            </div>
-            <div class="search-page">
+            <!-- </div> -->
+            <div class="search-page" style="margin-top: 20px;">
                 <div class="search-box search-header bg-theme card-style me-3 ms-3">
                     <i class="fa fa-search"></i>
                     <input type="text" id="code" onkeyup="search()" class="border-0" placeholder="Cari nomor berapa?">
@@ -56,15 +50,6 @@
                 <div class="search-results card card-style shadow-l">
                     <div class="content" id="result"></div>
                 </div>
-            </div>
-            <div class="footer card card-style">
-                <p class="footer-text"><span>Made with <i class="fa fa-heart color-highlight font-16 ps-2 pe-2"></i> by
-                        Inspirasi Stuff</span></p>
-                <div class="text-center mb-3">
-                    <a href="#" class="icon icon-xs rounded-sm shadow-l me-1 bg-facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="icon icon-xs rounded-sm shadow-l me-1 bg-twitter"><i class="fab fa-twitter"></i></a>
-                </div>
-                <div class="clear"></div>
             </div>
         </div>
     </div>
