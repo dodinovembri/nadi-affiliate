@@ -419,44 +419,6 @@ document['addEventListener']('DOMContentLoaded', () => {
             }
             _0x399bx82()
         };
-        var _0x399bx87 = document['querySelectorAll']('.scroll-ad, .header-auto-show');
-        if (_0x399bx87['length']) {
-            var _0x399bx88 = document['querySelectorAll']('.scroll-ad');
-            var _0x399bx89 = document['querySelectorAll']('.header-auto-show');
-            window['addEventListener']('scroll', function() {
-                if (document['querySelectorAll']('.scroll-ad, .header-auto-show')['length']) {
-                    function _0x399bx8a() {
-                        _0x399bx88[0]['classList']['add']('scroll-ad-visible')
-                    }
-
-                    function _0x399bx8b() {
-                        _0x399bx88[0]['classList']['remove']('scroll-ad-visible')
-                    }
-
-                    function _0x399bx8c() {
-                        _0x399bx89[0]['classList']['add']('header-active')
-                    }
-
-                    function _0x399bx8d() {
-                        _0x399bx89[0]['classList']['remove']('header-active')
-                    }
-                    var _0x399bx8e = window['outerWidth'];
-                    var _0x399bx8f = document['documentElement']['scrollTop'];
-                    let _0x399bx90 = _0x399bx8f <= 150;
-                    var _0x399bx91 = _0x399bx8f >= 150;
-                    let _0x399bx92 = (_0x399bx8e - _0x399bx8f + 1000) <= 150;
-                    if (_0x399bx88['length']) {
-                        _0x399bx90 ? _0x399bx8b() : null;
-                        _0x399bx91 ? _0x399bx8a() : null;
-                        _0x399bx92 ? _0x399bx8b() : null
-                    };
-                    if (_0x399bx89['length']) {
-                        _0x399bx90 ? _0x399bx8d() : null;
-                        _0x399bx91 ? _0x399bx8c() : null
-                    }
-                }
-            })
-        };
         var _0x399bx93 = document['querySelectorAll']('.stepper-add');
         var _0x399bx94 = document['querySelectorAll']('.stepper-sub');
         if (_0x399bx93['length']) {
