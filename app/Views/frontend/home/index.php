@@ -49,7 +49,7 @@
         </div>
     </div>
     <script type="text/javascript" src="<?= base_url('assets/frontend/scripts/bootstrap.min.js') ?>"></script>
-    <script type="text/javascript" src="<?= base_url('assets/frontend/scripts/custom.js?v2') ?>"></script>
+    <script type="text/javascript" src="<?= base_url('assets/frontend/scripts/custom.js?v3') ?>"></script>
 </body>
 
 <script>
