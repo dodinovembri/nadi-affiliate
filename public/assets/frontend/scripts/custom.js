@@ -284,7 +284,6 @@ document['addEventListener']('DOMContentLoaded', () => {
             _0x399bx50['type'] = 'text/css';
             _0x399bx50['href'] = 'styles/highlights/highlight_' + _0x399bx51 + '.css';
             if (!document['querySelectorAll']('.page-highlight')['length']) {
-                document['getElementsByTagName']('head')[0]['appendChild'](_0x399bx50);
                 document['body']['setAttribute']('data-highlight', 'highlight-' + _0x399bx51)
             }
         } else {
@@ -429,54 +428,6 @@ document['addEventListener']('DOMContentLoaded', () => {
                 document['getElementsByClassName']('upload-file-modified')[0]['innerHTML'] = _0x399bx69[0]['lastModifiedDate'];
                 document['getElementsByClassName']('upload-file-size')[0]['innerHTML'] = _0x399bx69[0]['size'] / 1000 + 'kb';
                 document['getElementsByClassName']('upload-file-type')[0]['innerHTML'] = _0x399bx69[0]['type']
-            }
-        };
-        var _0x399bx6b = document['querySelectorAll']('.get-location');
-        if (_0x399bx6b['length']) {
-            var _0x399bx6c = document['getElementsByClassName']('location-support')[0];
-            if (typeof(_0x399bx6c) != 'undefined' && _0x399bx6c != null) {
-                if ('geolocation' in navigator) {
-                    _0x399bx6c['innerHTML'] = 'Your browser and device <strong class=\"color-green2-dark\">support</strong> Geolocation.'
-                } else {
-                    _0x399bx6c['innerHTML'] = 'Your browser and device <strong class=\"color-red2-dark\">support</strong> Geolocation.'
-                }
-            };
-
-            function _0x399bx6d() {
-                const _0x399bx6e = document['querySelector']('.location-coordinates');
-
-                function _0x399bx6f(_0x399bx70) {
-                    const _0x399bx71 = _0x399bx70['coords']['latitude'];
-                    const _0x399bx72 = _0x399bx70['coords']['longitude'];
-                    _0x399bx6e['innerHTML'] = '<strong>Longitude:</strong> ' + _0x399bx72 + '<br><strong>Latitude:</strong> ' + _0x399bx71;
-                    var _0x399bx73 = 'https://www.google.com/maps/embed/v1/view?key=AIzaSyAM3nxDVrkjyKwdIZp8QOplmBKLRVI5S_Y&center=';
-                    var _0x399bx74 = _0x399bx71 + ',';
-                    var _0x399bx75 = _0x399bx72;
-                    var _0x399bx76 = '&zoom=16&maptype=satellite';
-                    var _0x399bx77 = '';
-                    var _0x399bx78 = _0x399bx73 + _0x399bx74 + _0x399bx75 + _0x399bx76;
-                    var _0x399bx79 = _0x399bx73 + _0x399bx74 + _0x399bx75 + _0x399bx77;
-                    document['getElementsByClassName']('location-map')[0]['setAttribute']('src', _0x399bx78);
-                    document['getElementsByClassName']('location-button')[0]['setAttribute']('href', _0x399bx79);
-                    document['getElementsByClassName']('location-button')[0]['classList']['remove']('disabled')
-                }
-
-                function _0x399bx7a() {
-                    _0x399bx6e['textContent'] = 'Unable to retrieve your location'
-                }
-                if (!navigator['geolocation']) {
-                    _0x399bx6e['textContent'] = 'Geolocation is not supported by your browser'
-                } else {
-                    _0x399bx6e['textContent'] = 'Locating';
-                    navigator['geolocation']['getCurrentPosition'](_0x399bx6f, _0x399bx7a)
-                }
-            }
-            var _0x399bx7b = document['getElementsByClassName']('get-location')[0];
-            if (typeof(_0x399bx7b) != 'undefined' && _0x399bx7b != null) {
-                _0x399bx7b['addEventListener']('click', function() {
-                    this['classList']['add']('disabled');
-                    _0x399bx6d()
-                })
             }
         };
         const _0x399bx7c = document['querySelectorAll']('.card-scale');
@@ -1359,21 +1310,6 @@ document['addEventListener']('DOMContentLoaded', () => {
     }
     if ('scrollRestoration' in window['history']) {
         window['history']['scrollRestoration'] = 'manual'
-    };
-    if (_0x399bx3 === true) {
-        if (window['location']['protocol'] !== 'file:') {
-            const _0x399bx134 = {
-                containers: ['#page'],
-                cache: false,
-                animateHistoryBrowsing: false,
-                plugins: [new SwupPreloadPlugin()],
-                linkSelector: 'a:not(.external-link):not(.default-link):not([href^=\"https\"]):not([href^=\"http\"]):not([data-gallery])'
-            };
-            const _0x399bx135 = new Swup(_0x399bx134);
-            document['addEventListener']('swup:pageView', (_0x399bxb) => {
-                _0x399bx9()
-            })
-        }
     };
     _0x399bx9()
 })
