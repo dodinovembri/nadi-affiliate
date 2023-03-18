@@ -283,9 +283,6 @@ document['addEventListener']('DOMContentLoaded', () => {
             _0x399bx50['className'] = 'page-highlight';
             _0x399bx50['type'] = 'text/css';
             _0x399bx50['href'] = 'styles/highlights/highlight_' + _0x399bx51 + '.css';
-            if (!document['querySelectorAll']('.page-highlight')['length']) {
-                document['body']['setAttribute']('data-highlight', 'highlight-' + _0x399bx51)
-            }
         } else {
             var _0x399bx52 = document['body']['getAttribute']('data-highlight');
             var _0x399bx53 = _0x399bx52['split']('highlight-');
