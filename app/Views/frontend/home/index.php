@@ -9,6 +9,7 @@
     <title>Inspirasi Stuff</title>
     <link rel="stylesheet" href="<?= base_url('assets/frontend/styles/bootstrap.css') ?>">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i&amp;display=swap" rel="stylesheet">
+    <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
     <link rel="stylesheet" href="<?= base_url('assets/frontend/fonts/css/fontawesome-all.min.css') ?>">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
