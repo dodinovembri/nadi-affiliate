@@ -10,9 +10,9 @@ class AjaxSearchModel extends Model
     {
         $db = \Config\Database::connect();
         if ($query != '') {
-            return $db->query(" SELECT * FROM product WHERE code LIKE '%$query%' OR name LIKE '%$query%' AND status != 0 ");
+            return $db->query(" SELECT * FROM product WHERE code LIKE '%$query%' OR name LIKE '%$query%' AND status != 0 ORDER BY created_at DESC");
         } else {
-            return $db->query(" SELECT * FROM product WHERE status != 0 ");
+            return $db->query(" SELECT * FROM product WHERE status != 0 ORDER BY created_at DESC");
         }
     }
 }
