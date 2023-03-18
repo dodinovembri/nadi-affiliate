@@ -6,7 +6,6 @@ setTimeout(function() {
 }, 150);
 document['addEventListener']('DOMContentLoaded', () => {
     'use strict';
-    let _0x399bx3 = true;
     var _0x399bx4 = 'Sticky';
     var _0x399bx6 = false;
 
@@ -337,47 +336,6 @@ document['addEventListener']('DOMContentLoaded', () => {
             }
         }
 
-        function _0x399bx5c() {
-            var _0x399bx5d = document['querySelectorAll']('.btn, .header, #footer-bar, .menu-box, .menu-active');
-            for (let _0x399bxa = 0; _0x399bxa < _0x399bx5d['length']; _0x399bxa++) {
-                _0x399bx5d[_0x399bxa]['style']['transition'] = ''
-            }
-        }
-
-        function _0x399bx5e() {
-            const _0x399bx5f = window['matchMedia']('(prefers-color-scheme: dark)')['matches'];
-            const _0x399bx60 = window['matchMedia']('(prefers-color-scheme: light)')['matches'];
-            const _0x399bx61 = window['matchMedia']('(prefers-color-scheme: no-preference)')['matches'];
-            window['matchMedia']('(prefers-color-scheme: dark)')['addListener']((_0x399bxb) => {
-                return _0x399bxb['matches'] && _0x399bx58()
-            });
-            window['matchMedia']('(prefers-color-scheme: light)')['addListener']((_0x399bxb) => {
-                return _0x399bxb['matches'] && _0x399bx59()
-            });
-            if (_0x399bx5f) {
-                _0x399bx58()
-            };
-            if (_0x399bx60) {
-                _0x399bx59()
-            }
-        }
-        const _0x399bx62 = document['querySelectorAll']('[data-toggle-theme]');
-        _0x399bx62['forEach']((_0x399bxc) => {
-            return _0x399bxc['addEventListener']('click', (_0x399bxb) => {
-                if (document['body']['className'] == 'theme-light') {
-                    _0x399bx5a();
-                    _0x399bx58()
-                } else {
-                    if (document['body']['className'] == 'theme-dark') {
-                        _0x399bx5a();
-                        _0x399bx59()
-                    }
-                };
-                setTimeout(function() {
-                    _0x399bx5c()
-                }, 350)
-            })
-        });
         if (localStorage['getItem'](_0x399bx4 + '-Theme') == 'dark-mode') {
             for (let _0x399bxa = 0; _0x399bxa < _0x399bx57['length']; _0x399bxa++) {
                 _0x399bx57[_0x399bxa]['checked'] = 'checked'
@@ -1305,8 +1263,6 @@ document['addEventListener']('DOMContentLoaded', () => {
             }
         }
     }
-    if ('scrollRestoration' in window['history']) {
-        window['history']['scrollRestoration'] = 'manual'
-    };
+
     _0x399bx9()
 })
