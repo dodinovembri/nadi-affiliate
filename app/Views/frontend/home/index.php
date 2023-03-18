@@ -7,10 +7,9 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
     <title>Inspirasi Stuff</title>
-    <link rel="stylesheet" type="text/css" href="<?= base_url('assets/frontend/styles/bootstrap.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/frontend/styles/bootstrap.css') ?>">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="<?= base_url('assets/frontend/fonts/css/fontawesome-all.min.css') ?>">
-    <link rel="apple-touch-icon" sizes="180x180" href="<?= base_url('assets/frontend/app/icons/icon-192x192.html') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/frontend/fonts/css/fontawesome-all.min.css') ?>">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
