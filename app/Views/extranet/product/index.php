@@ -34,9 +34,8 @@
                                     <table class="display table table-striped table-bordered" id="zero_configuration_table" style="width:100%">
                                         <thead>
                                             <tr>
-                                                <th style="width:10px">No</th>
-                                                <th>Image</th>
                                                 <th>Code</th>
+                                                <th>Image</th>
                                                 <th>Name</th>
                                                 <th>Url</th>
                                                 <th style="width:25px">Status</th>
@@ -48,11 +47,10 @@
                                             foreach ($products as $key => $value) {
                                                 $no++; ?>
                                                 <tr>
-                                                    <td><?= $no ?></td>
+                                                    <td><?= $value->code ?></td>
                                                     <td>
                                                         <img src="<?= base_url('assets/images/product/' . $value->image) ?>" width="80" alt="">
                                                     </td>
-                                                    <td><?= $value->code ?></td>
                                                     <td><?= $value->name ?></td>
                                                     <td><?= $value->url ?></td>
                                                     <td>

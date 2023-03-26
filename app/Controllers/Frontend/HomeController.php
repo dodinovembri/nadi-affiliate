@@ -50,7 +50,7 @@ class HomeController extends BaseController
                                 <img class="" src="'.base_url("assets/images/product/" . $row->image) .'" data-src="'. base_url("assets/images/product/" . $row->image) .'" alt="img">
                                 <h1>' . $row->code .'</h1>
                                 <p>' . $row->name . '</p>
-                                <a href="' . $row->url. '" target="_blank" class="bg-highlight">BUKA</a>
+                                <a href="' . $row->url. '" target="_blank" class="bg-highlight">KLIK DI SINI UNTUK BUKA</a>
                             </div>
                             ';
                 if ($i == 25) {

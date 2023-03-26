@@ -44,7 +44,7 @@ $routes->get('ext-login', [\App\Controllers\Extranet\AuthController::class, 'log
 $routes->post('ext-auth', [\App\Controllers\Extranet\AuthController::class, 'auth']);
 $routes->get('ext-logout', [\App\Controllers\Extranet\AuthController::class, 'logout']);
 $routes->group('extranet', ['filter' => 'auth'], function($routes){
-	$routes->get('/', [\App\Controllers\Extranet\HomeExtranetController::class, 'index']);
+	$routes->get('/', [\App\Controllers\Extranet\ProductController::class, 'index']);
 	$routes->post('store', [\App\Controllers\Extranet\HomeExtranetController::class, 'store']);
 
 	$routes->group('product', function ($routes) {

@@ -11,7 +11,7 @@ class ProductController extends BaseController
     {
         // product
         $app = new ProductModel();
-        $data['products'] = $app->get()->getResult();
+        $data['products'] = $app->orderBy('code', 'DESC')->get()->getResult();
 
         return view('extranet/product/index', $data);
     }
